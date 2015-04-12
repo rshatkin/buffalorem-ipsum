@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="stylesheets/css/style.css">
+</head>
+
+<body>
+  <div id="ipsum-container">
+    <h1>Buffalorem Ipsum</h1>
+    <h2>Categories</h2>
+    <form id="ipsum-form" action="#" method="post">
+      Paragraphs: <input id="paragraph_count" style="width: 25px;" type="text" maxlength="7"/><br>
+
+      CATEGORIES: <!-- default choice on load -->
+            <input id="default" type="checkbox" name="option" value="default" style="display:none" />
+            <input id="category" class="words_sports" type="checkbox" name="option" value="words_sports" />
+            <label for="words_sports">Sports</label>
+            <input id="category" class="words_weather" type="checkbox" name="option" value="words_weather" />
+            <label for="words_weather">Weather</label>
+            <input id="category" class="words_food" type="checkbox" name="option" value="words_food" />
+            <label for="words_food">Food & Booze</label>
+            <input id="category" class="words_culture" type="checkbox" name="option" value="words_culture" />
+            <label for="words_culture">Culture</label>
+            <input type="submit" id="submit" value="Submit" />
+    </form>
+    <div id="print-ipsum"></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/ipsum.js"></script>
+  <script type="text/javascript" src="js/buffWords.js"></script>
+</body>
+</html>
